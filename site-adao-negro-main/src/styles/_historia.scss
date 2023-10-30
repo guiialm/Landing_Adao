@@ -1,0 +1,113 @@
+@use "variaveis";
+
+.pd {
+  padding-top: 60px;
+}
+
+.historia {
+  @media (max-width: 800px) {
+    h1 {
+      font-size: 2rem;
+      padding-top: 30px;
+    }
+  }
+
+  &__tabs {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    @media (max-width: 500px) {
+      gap: 15px;
+      margin-bottom: 60px;
+    }
+
+    &__button {
+      color: variaveis.$corTextoPrincipal;
+      font-size: 24px;
+      border: none;
+      padding: 60px 0 0 0;
+      background: none;
+      text-transform: uppercase;
+      cursor: pointer;
+      border-bottom: 5px solid transparent;
+
+      @media (max-width: 800px) {
+        font-size: 1rem;
+        margin-bottom: 0px;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 0.7rem;
+      }
+
+      &--is-active {
+        border-color: variaveis.$corTextoPrincipal;
+      }
+    }
+  }
+
+  &__container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    gap: 60px;
+    width: 90%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 40px;
+    border: none;
+    margin: 30px auto;
+
+    @media (max-width: 1400px) {
+      padding: 30px;
+      gap: 30;
+      height: 400px;
+    }
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    &--is-active {
+      display: flex;
+      animation: show 2s backwards;
+    }
+
+    img {
+      border-radius: 40px;
+      width: 700px;
+
+      @media (max-width: 1400px) {
+        width: 500px;
+      }
+
+      @media(max-width: 500px){
+        width: 400px;
+      }
+    }
+
+    p {
+      color: variaveis.$corTextoParagrafo;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+
+      @media (max-width: 1400px) {
+        font-size: 1rem;
+      }
+      @media(max-width: 500px){
+        font-size: .7rem;
+      }
+    }
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

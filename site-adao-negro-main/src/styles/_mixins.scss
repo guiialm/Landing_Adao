@@ -1,0 +1,22 @@
+@use 'variaveis';
+
+@mixin tituloPrincipal {
+    font-size: 48px;
+    color: variaveis.$corTextoPrincipal;
+    text-align: center
+}
+
+@mixin tituloSecundario{
+    font-size: 24px;
+    color: variaveis.$corTextoPrincipal;
+}
+
+.tituloPrincipal{
+    @include tituloPrincipal;
+    text-transform: uppercase;
+
+}
+
+.tituloSecundario{
+    @include tituloSecundario()
+}

@@ -1,0 +1,24 @@
+
+@use 'variaveis';
+@use 'mixins';
+@use 'hero';
+@use 'historia';
+@use 'personagens';
+@use 'elenco';
+@use 'sobre';
+@use 'footer';
+@use 'header';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: variaveis.$corDeFundo;
+    font-family: variaveis.$fontPrincipal;
+}
+
+
+

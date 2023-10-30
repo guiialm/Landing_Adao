@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Adão Negro</title>
+  </head>
+  <body>
+    <header class="header ">
+      <div class="header__container">
+        <h1>
+          <img class="header__logo" src="./src/images/desktop/dc-logo.png" alt="Logo" />
+        </h1>
+        <ul class="header__links">
+          <li class="header__links__item"><a href="#historia">historia</a></li>
+          <li class="header__links__item"><a href="#personagens">personagens</a></li>
+          <li class="header__links__item"><a href="#elenco">elenco</a></li>
+          <li class="header__links__item"><a href="#sobre">o filme</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section id="hero" class="hero">
+      <div class="hero__container">
+        <img
+          class="hero__container__logo-principal__img"
+          src="./dist/images/desktop/elenco-desk.jpg"
+          alt=""
+        />
+        <img
+          class="hero__container__logo__img"
+          src="./dist/images/desktop/logo-trans.png"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <section id="historia" class="historia">
+      <h1 class="tituloPrincipal pd">História</h1>
+
+      <nav class="historia__tabs">
+        <button
+          data-tab-button="egito-antigo"
+          class="historia__tabs__button historia__tabs__button--is-active"
+        >
+          egito antigo
+        </button>
+        <button data-tab-button="teth-adan" class="historia__tabs__button">
+          teth-adan
+        </button>
+        <button data-tab-button="poderes" class="historia__tabs__button">
+          poderes
+        </button>
+        <button data-tab-button="habilidades" class="historia__tabs__button">
+          habilidades
+        </button>
+      </nav>
+      <div
+        data-tab-id="egito-antigo"
+        class="historia__container historia__container--is-active"
+      >
+        <div class="historia__img">
+          <img src="./dist/images/desktop/adao-egito.jpg" alt="Egito" />
+        </div>
+        <p>
+          No Egito Antigo, o mago Shazam se tornou um dos conselheiros do faraó
+          Ramsés II. Conforme ele foi envelhecendo, ele decidiu escolher um novo
+          campeão para herdar seus poderes. O escolhido foi o jovem príncipe
+          Teth-Adam, visto como uma pessoa justa e decente pelo mago. No
+          entanto, por conta de um acordo que Blaze, filha do mago, fez com o
+          deus egípcio Set, toda vez que Teth-Adam dissesse “Shazam!”, ele
+          ganharia, na verdade, os poderes de outros seis deuses egípcios, Shu,
+          Heru, Amon, Zehuti, Aton e Mehen.
+        </p>
+      </div>
+      <div data-tab-id="teth-adan" class="historia__container">
+        <div class="historia__img">
+          <img src="./dist/images/desktop/ado-trono.jpg" alt="Egito" />
+        </div>
+        <p>
+          Teth-Adam se tornou um herói por séculos até o dia em que foi
+          corrompido por Blaze e matou o governante de Kahndaq, país que ficava
+          na Península do Sinai, e se proclamou novo governante do local. Shazam
+          soube do ocorrido e prendeu a alma do personagem em um escaravelho e o
+          enterrou, junto de seu corpo, na tumba de Ramses II, onde deveria
+          ficar pelo resto da eternidade. A partir desse dia, ele recebeu o nome
+          de Adão Negro. Por conta disso, Shazam passou milênios sem apontar um
+          novo campeão.
+        </p>
+      </div>
+      <div data-tab-id="poderes" class="historia__container">
+        <div class="historia__img">
+          <img src="./dist/images/desktop/adao-poderes.webp" alt="poderes" />
+        </div>
+        <p>
+          A resistência de Shu: ela permite que o Adão Negro consiga sobreviver
+          aos mais variados tipos de ataque. A velocidade de Heru (mais
+          conhecido como Hórus): o vilão pode se mover a velocidades
+          supersônicas, além de conseguir voar e ganhar reflexos sobre-humanos.
+          A força de Ámon: O Adão Negro possui uma força que o transformou em um
+          dos seres mais poderosos da Terra. A sabedoria de Zehuti (mais
+          conhecido como Toth): o personagem ganha acesso instantâneo a várias
+          áreas do conhecimento.
+        </p>
+      </div>
+      <div data-tab-id="habilidades" class="historia__container">
+        <div class="historia__img">
+          <img
+            src="./dist/images/desktop/adao-habilidades.webp"
+            alt="habilidades"
+          />
+        </div>
+        <p>
+          Adão Negro também possui um vasto conhecimento do Egito Antigo, sabe
+          falar diversas línguas, é especialista em combate corpo a corpo e tem
+          grandes habilidades de liderança. O personagem possui apenas uma
+          fraqueza: tem certa vulnerabilidade a eletricidade. Se receber uma
+          descarga elétrica muito forte, pode voltar a ser Theo Adam.
+        </p>
+      </div>
+    </section>
+
+    <section id="personagens" class="personagens">
+      <h1 class="tituloPrincipal">personagens</h1>
+      <div class="personagens__container">
+        <div
+          class="personagens__container__painel personagens__container__img1 personagens__container-active"
+        >
+          <h3>
+            Gavião Negro Gavião Negro é o líder da Sociedade da Justiça e está
+            encarregado de encarcerar Adão Negro depois que ele foi libertado de
+            sua prisão. No entanto, mesmo que seus princípios não se alinhem
+            completamente com os de Adão Negro, eventualmente os dois se unem
+            para derrotar Sabbac.
+          </h3>
+        </div>
+        <div
+          class="personagens__container__painel personagens__container__img2"
+        >
+          <h3>
+            Albert Rothstein, o Esmaga Átomo, por exemplo, usa o traje que
+            pertenceu ao seu tio, tendo em vista que sua estrutura molecular
+            interna é capaz de alterar o estado físico de seu corpo. Desse modo,
+            o personagem consegue crescer imensamente e, consequentemente, ficar
+            mais forte.
+          </h3>
+        </div>
+        <div
+          class="personagens__container__painel personagens__container__img3"
+        >
+          <h3>
+            Senhor Destino é um dos seres mágicos mais poderosos da DC . Ele
+            pode distorcer a realidade, ver o futuro, controlar os elementos e
+            curar os outros. Sua experiência como super-herói o coloca em um
+            nível mais alto do que Gavião Negro, especialmente porque as armas
+            de Gavião Negro não podem passar pela magia do destino.
+          </h3>
+        </div>
+        <div
+          class="personagens__container__painel personagens__container__img4"
+        >
+          <h3>
+            Ciclone, que possui um visual bastante chamativo e colorido, além de
+            poderes muito úteis. Capaz de manipular o ar e provocar grandes
+            tempestades de ventania, a personagem também possui um Q.I. bem
+            elevado e muita inteligência.
+          </h3>
+        </div>
+        <div
+          class="personagens__container__painel personagens__container__img5"
+        >
+          <h3>
+            Adrianna Tomaz, uma estudiosa que vive com seu filho Amon (Bodhi
+            Sabongui) e seu irmão Karim (Mohammed Amer) em constante perigo. A
+            professora já se arriscou de diferentes maneiras para encontrar a
+            coroa de Sabbac e tentar libertar seu povo de ditadores.
+          </h3>
+        </div>
+        <div
+          class="personagens__container__painel personagens__container__img6"
+        >
+          <h3>
+            Dwayne Johnson estrela em Adão Negro como Teth Adam, um campeão
+            anterior de Shazam cujos poderes foram corrompidos pela raiva de
+            perder seu único filho. O filme o segue enquanto ele faz as pazes
+            com seu passado e se torna um verdadeiro herói para as pessoas em
+            Kahndaq, que o admiram.
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="elenco" class="elenco">
+      <h1 class="tituloPrincipal">Elenco</h1>
+      <div class="elenco__container">
+        <img src="./src/images/elenco/elenco.webp" alt="" />
+        <p>
+          Albert Rothstein, o Esmaga Átomo, por exemplo, usa o traje que
+          pertenceu ao seu tio, tendo em vista que sua estrutura molecular
+          interna é capaz de alterar o estado físico de seu corpo. Desse modo, o
+          personagem consegue crescer imensamente e, consequentemente, ficar
+          mais forte.<br /><br />
+          Dwayne Johnson estrela em Adão Negro como Teth Adam, um campeão
+          anterior de Shazam cujos poderes foram corrompidos pela raiva de
+          perder seu único filho. O filme o segue enquanto ele faz as pazes com
+          seu passado e se torna um verdadeiro herói para as pessoas em Kahndaq,
+          que o admiram.
+        </p>
+      </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+      <h1 class="tituloPrincipal">Sobre o filme</h1>
+      <ul class="sobre__perguntas">
+        <li class="sobre__perguntas__item">
+          <div class="sobre__perguntas__item__pergunta">Pergunta1?</div>
+          <div class="sobre__perguntas__item__resposta">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+            eum labore. Omnis possimus maiores, vero minus est assumenda.
+            Corporis soluta quis harum id veniam amet nam corrupti sapiente non
+            voluptatem.
+          </div>
+        </li>
+        <li class="sobre__perguntas__item">
+          <div class="sobre__perguntas__item__pergunta">Pergunta2?</div>
+          <div class="sobre__perguntas__item__resposta">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+            eum labore. Omnis possimus maiores, vero minus est assumenda.
+            Corporis soluta quis harum id veniam amet nam corrupti sapiente non
+            voluptatem.
+          </div>
+        </li>
+        <li class="sobre__perguntas__item">
+          <div class="sobre__perguntas__item__pergunta">Pergunta3?</div>
+          <div class="sobre__perguntas__item__resposta">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+            eum labore. Omnis possimus maiores, vero minus est assumenda.
+            Corporis soluta quis harum id veniam amet nam corrupti sapiente non
+            voluptatem.
+          </div>
+        </li>
+        <li class="sobre__perguntas__item">
+          <div class="sobre__perguntas__item__pergunta">Pergunta4?</div>
+          <div class="sobre__perguntas__item__resposta">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+            eum labore. Omnis possimus maiores, vero minus est assumenda.
+            Corporis soluta quis harum id veniam amet nam corrupti sapiente non
+            voluptatem.
+          </div>
+        </li>
+        <li class="sobre__perguntas__item">
+          <div class="sobre__perguntas__item__pergunta">Pergunta5?</div>
+          <div class="sobre__perguntas__item__resposta">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+            eum labore. Omnis possimus maiores, vero minus est assumenda.
+            Corporis soluta quis harum id veniam amet nam corrupti sapiente non
+            voluptatem.
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <img
+        class="footer__logo"
+        src="./src/images/desktop/dc-logo.png"
+        alt="Logo"
+      />
+      <div class="footer__termos">
+        <p><a href="#">política de privacidade</a> </p>
+        <p><a href="#">termos</a></p>
+        <p><a href="#">acessibilidade</a></p>
+        <p><a href="#">preferencias</a></p>
+      </div>
+    </footer>
+    <script src="./dist/js/main.js"></script>
+  </body>
+</html>

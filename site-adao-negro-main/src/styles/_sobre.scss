@@ -1,0 +1,59 @@
+@use "variaveis";
+
+.sobre {
+  padding: 60px 0;
+  width: 60vw;
+  margin: 0 auto;
+
+  h1 {
+    padding: 60px 0;
+  }
+
+  @media (max-width: 800px) {
+    
+    h1{
+      font-size: 2rem;
+      padding-top: 30px;
+    }
+  }
+  &__perguntas {
+    &__item {
+      background-color: rgba(255, 255, 255, 0.1);
+      margin-bottom: 10px;
+
+      &__pergunta {
+        color: #fff;
+        padding: 30px;
+        display: block;
+        cursor: pointer;
+        position: relative;
+
+        &::after {
+          content: "+";
+          position: absolute;
+          right: 30px;
+          font-size: 1.5rem;
+        }
+
+        &--pseudo::after{
+          content: "-";
+          position: absolute;
+          right: 30px;
+          font-size: 1.5rem;
+        }
+      }
+
+      &__resposta {
+        color: variaveis.$corTextoParagrafo;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        padding: 30px;
+        display: none;
+        
+        &--abrir {
+          display: block;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@use 'variaveis';
+
+.elenco{
+    @media (max-width: 800px) {
+        h1{
+            font-size: 2rem;
+            padding-top: 0px;
+          }
+    }
+
+    &__container{
+        padding-top: 60px;
+        display: flex;
+        gap: 60px;
+        width: 90vw;
+        margin: 0 auto;
+        align-items: center;
+
+        @media (max-width: 800px) {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        img{
+            border-radius: 40px;
+            width: 700px;
+
+            @media (max-width: 1400px){
+                width: 500px;
+            }
+            @media (max-width: 800px) {
+                max-width: 90vw;
+                width: 100%;
+            }
+        }
+
+        p{
+        color: variaveis.$corTextoParagrafo;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+
+        @media (max-width: 1400px){
+            font-size: 1rem;
+        }
+    }
+    }
+}
